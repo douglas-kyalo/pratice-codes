@@ -1,16 +1,32 @@
-const calorieCounter = document.getElementById('calorie-counter');
-const budgetNumberInput = document.getElementById('budget');
-const entryDropdown = document.getElementById('entry-dropdown');
-const addEntryButton = document.getElementById('add-entry');
-const clearButton = document.getElementById('clear');
-const output = document.getElementById('output');
-let isError = false;
+let xp = 0;
+let health = 100;
+let gold = 50;
+let currentWeapon = 0;
+let fighting;
+let monsterHealth;
+let inventory = ["stick"];
 
-function cleanInputString(str) {
-  const regex = /[+-\s]/g;
-  return str.replace(regex, '');
+const button1 = document.querySelector('#button1');
+const button2 = document.querySelector("#button2");
+const button3 = document.querySelector("#button3");
+const text = document.querySelector("#text");
+const xpText = document.querySelector("#xpText");
+const healthText = document.querySelector("#healthText");
+const goldText = document.querySelector("#goldText");
+const monsterStats = document.querySelector("#monsterStats");
+const monsterName = document.querySelector("#monsterName");
+const monsterHealthText = document.querySelector("#monsterHealth");
+
+// initialize buttons
+
+function goStore() {
+  console.log("Going to store.");
 }
 
-function isInvalidInput(str) {
-  const regex = /e/;
+function goCave() {
+  console.log("Going to cave.");
+}
+
+function fightDragon() {
+  console.log("Fighting dragon.");
 }
